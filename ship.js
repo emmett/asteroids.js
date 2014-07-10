@@ -2,7 +2,7 @@
 	var Asteroids = root.Asteroids = (root.Asteroids || {});
 	var MovingObject = Asteroids.MovingObject;
 		
-	var maxV = 30;
+	var maxV = 20;
 		
 	var Ship = Asteroids.Ship = function (pos, vel, radius) {
 		var COLOR = "black";

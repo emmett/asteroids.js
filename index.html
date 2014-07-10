@@ -11,13 +11,14 @@
     
 </head>
 <body>
-	<canvas width="500" height= "500" style="border:2px solid #000000; fill: solid #2c3e50" ></canvas>
+	<canvas width="500" height= "500" style="border:2px solid #000000; background-color:#000000" ></canvas>
 
    
 	<script>
 	var canvas = document.getElementsByTagName("canvas")[0];
 	var ctx = canvas.getContext('2d')
 	var g = new Asteroids.Game(ctx);
+
 	g.start();
         
   
