@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BadAssteroids</title>
+  <script src="keymaster.js"></script>
+  <script src="movingObjects.js"></script>
+  <script src="asteroid.js"></script>
+  <script src="ship.js"></script>
+  <script src="game.js"></script>
+    
+</head>
+<body>
+  <canvas width="500" height= "500" ></canvas>
+
+   
+  <script>
+  var canvas = document.getElementsByTagName("canvas")[0];
+  var ctx = canvas.getContext('2d')
+  var g = new Asteroids.Game(ctx);
+  g.start();
+        
+  key('w', function () { g.ship.power(-1)});
+  key('a', function () { g.ship.rotate(- Math.PI / 6)});
+  key('s', function () { g.ship.power(1)});
+  key('d', function () { g.ship.rotate( Math.PI / 6)});
+  </script>
+</body>
+</html>
+
