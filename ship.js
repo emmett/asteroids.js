@@ -70,8 +70,8 @@
 		var origin = [pos[1] + rad * Math.sin(ang), pos[0] + rad * Math.cos(ang)]
 		var bulletVel = [];
 			
-		bulletVel[1] = 10 *  Math.cos(ang) + this.vel[0];
-		bulletVel[0] = 10 *  Math.sin(ang) + this.vel[1];
+		bulletVel[1] = 5 * Math.cos(ang) + this.vel[0];
+		bulletVel[0] = 5 *  Math.sin(ang) + this.vel[1];
 			
 		return new Asteroids.Bullet(origin, bulletVel, 5);
 	}

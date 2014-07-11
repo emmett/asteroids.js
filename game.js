@@ -1,9 +1,9 @@
 (function (root) {
 	var Asteroids = root.Asteroids = (root.Asteroids || {});
     
-	var Game = Asteroids.Game = function (ctx) {
+	var Game = Asteroids.Game = function (ctx, num) {
 		this.ctx = ctx;
-		this.asteroids = this.addAsteroids(1);
+		this.asteroids = this.addAsteroids(num);
 		this.ship = this.addShip();
 		this.bullets = [];
 	};
